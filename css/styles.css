@@ -85,31 +85,30 @@ body {
 .logo_empresa {
   display: none; }
 
-.contendedor-index {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  align-items: center; }
-
 .carousel {
   display: none; }
 
 .intro {
   text-align: center;
   padding-right: 1rem; }
+  .intro p {
+    font-size: 0.7rem; }
+
+.imagen-primera {
+  text-align: center; }
 
 .img-local {
-  width: 100%;
+  width: 70%;
   padding-left: 1rem;
-  padding-right: 1rem;
-  justify-content: center; }
+  padding-right: 1rem; }
 
 .horarios {
   text-align: center;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 0.8rem; }
 
 .como-llegar {
   display: none; }
@@ -131,6 +130,8 @@ body {
   justify-content: center;
   padding-top: 1rem;
   text-align: center; }
+  .detalle-horarios p {
+    font-size: 0.7rem; }
 
 /*<<<<<<<<<<<<<<<<<<<<<<QUIENES SOMOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .video {
@@ -369,9 +370,9 @@ fieldset {
     font-size: 2rem; }
   .contenido-principal {
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 4fr 3fr 0fr;
     grid-template-areas: "presentation presentation presentation" "video article article" "premio premio premio";
-    gap: 2rem; }
+    gap: 1rem; }
   .presentation {
     grid-area: presentation;
     display: flex;
@@ -569,7 +570,7 @@ legend {
   justify-content: center;
   padding-left: 20px; }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER COMPU QUERIE<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER TABLET QUERIE<<<<<<<<<<<<<<<<<*/
 .lista-redes {
   display: flex;
   flex-direction: row;
@@ -595,6 +596,8 @@ legend {
   .carousel-indicators {
     display: block;
     text-align: center; }
+  .titulo-mandalas {
+    padding-right: 8rem; }
   /*PAGINA QUIENES SOMOS*/
   .total-pagina-quienes header div h1 {
     color: blue;

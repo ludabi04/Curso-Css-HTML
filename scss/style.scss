@@ -78,6 +78,7 @@ body {
     align-items: center;
     gap: 2.7rem;
     justify-content:flex-end;
+    
 }
 
 .titulo-nav, .nav-item {
@@ -105,11 +106,7 @@ body {
     display: none;
 }
 
-.contendedor-index {
-    @include f-col;
-    padding: 1rem;
-    align-items: center;
-}
+
 
 .carousel {
     display: none;
@@ -118,13 +115,21 @@ body {
 .intro {
     text-align: center;
     padding-right: 1rem;
+    p {
+        font-size: 0.7rem;
+    }
 }
 
+.imagen-primera {
+    text-align: center;
+}
+
+
 .img-local {
-    width: 100%;
+    width: 70%;
     padding-left: 1rem;
     padding-right: 1rem;
-    justify-content: center;
+    
 }
 
 .horarios {
@@ -132,6 +137,7 @@ body {
     padding: 1rem;
     @include f-col;
     justify-content: center;
+    font-size: 0.8rem;
 }
 
 .como-llegar {
@@ -158,6 +164,9 @@ body {
     justify-content: center;
     padding-top: 1rem;
     text-align: center;
+    p {
+        font-size: 0.7rem;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<QUIENES SOMOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -358,9 +367,6 @@ fieldset {
 
 
 
-
-
-
 /*MEDIA QUERI PARA tablet*/
 @media screen and (min-width:720px)
 
@@ -527,12 +533,12 @@ fieldset {
 
 .contenido-principal {
     display: grid;
-    grid-template-columns: 2fr 4fr ;
+    grid-template-columns: 4fr 3fr 0fr ;
     grid-template-areas:
         "presentation presentation presentation"
         "video article article"
         "premio premio premio";
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .presentation {
@@ -872,7 +878,7 @@ div {
 
     }
 
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER COMPU QUERIE<<<<<<<<<<<<<<<<<*/
+    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER TABLET QUERIE<<<<<<<<<<<<<<<<<*/
     .lista-redes {
         display: flex;
         flex-direction: row;
@@ -906,6 +912,10 @@ div {
     .carousel-indicators {
         display: block;
         text-align: center;
+    }
+
+    .titulo-mandalas {
+        padding-right: 8rem;
     }
     
     /*PAGINA QUIENES SOMOS*/
