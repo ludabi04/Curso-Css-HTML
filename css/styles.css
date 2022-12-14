@@ -12,51 +12,49 @@
 
 body {
   background-color: #8BC6EC;
-  background-image: linear-gradient(191deg, #8BC6EC 0%, #3b3e56 100%); }
+  background-image: linear-gradient(191deg, #8BC6EC 0%, #3b3e56 100%);
+  /* Animate Background Image */ }
+  body .animacion-ingreso {
+    font: 100 .5rem "Neuton";
+    color: black;
+    text-align: center;
+    margin: 0; }
+    body .animacion-ingreso p {
+      text-transform: uppercase;
+      letter-spacing: .5em;
+      display: inline-block;
+      border: 4px double rgba(255, 255, 255, 0.25);
+      border-width: 4px 0;
+      padding: 1.5em 0em;
+      position: absolute;
+      top: 40%;
+      left: 0%;
+      width: 100%; }
+      body .animacion-ingreso p span {
+        font: 700 4em/1 "Oswald", sans-serif;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+        /* Clip Background Image */
+        background: url(../img/cielo.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* Animate Background Image */
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+        /* Activate hardware acceleration for smoother animations */
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden; }
 
-.animacion-ingreso {
-  font: 100 .5rem "Neuton";
-  color: black;
-  text-align: center;
-  margin: 0; }
-
-.animacion-ingreso p {
-  text-transform: uppercase;
-  letter-spacing: .5em;
-  display: inline-block;
-  border: 4px double rgba(255, 255, 255, 0.25);
-  border-width: 4px 0;
-  padding: 1.5em 0em;
-  position: absolute;
-  top: 40%;
-  left: 0%;
-  width: 100%; }
-
-.animacion-ingreso p span {
-  font: 700 4em/1 "Oswald", sans-serif;
-  letter-spacing: 0;
-  padding: .25em 0 .325em;
-  display: block;
-  margin: 0 auto;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-  /* Clip Background Image */
-  background: url(../img/cielo.png) repeat-y;
-  -webkit-background-clip: text;
-  background-clip: text;
-  /* Animate Background Image */
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
-  /* Activate hardware acceleration for smoother animations */
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden; }
-
-/* Animate Background Image */
 @-webkit-keyframes aitf {
   0% {
     background-position: 0% 50%; }
   100% {
     background-position: 100% 50%; } }
 
+/*NAVEGADOR */
 .header {
   position: sticky;
   top: 0;
@@ -80,7 +78,8 @@ body {
   margin: .2rem 0 0;
   border: 1px solid #8585ab;
   text-align: center;
-  box-shadow: 1px 1px 3px #8585ab; }
+  box-shadow: 1px 1px 3px #8585ab;
+  font-size: 0.6rem; }
 
 .logo_empresa {
   display: none; }
@@ -154,6 +153,15 @@ body {
   padding-right: 1rem; }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<TRABAJOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<*/
+main div div div div p {
+  font-size: 0.5rem; }
+
+main div h3 {
+  font-size: 1rem; }
+
+main h2 {
+  font-size: 1rem; }
+
 .tipo-cortes {
   display: flex;
   flex-direction: column;
@@ -176,6 +184,17 @@ body {
   width: 5%; }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<< PRODUCTOS PARA CELU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+main div div div div p {
+  font-size: 0.5rem; }
+
+main div h3 {
+  font-size: 0.7rem; }
+
+main div p {
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 0.7rem; }
+
 .productos {
   flex-direction: row;
   text-align: center; }
@@ -264,7 +283,8 @@ fieldset {
   width: 30px; }
 
 .copyright {
-  text-align: center; }
+  text-align: center;
+  font-size: 0.5rem; }
 
 /*MEDIA QUERI PARA tablet*/
 @media screen and (min-width: 720px) {
@@ -310,19 +330,19 @@ fieldset {
   .nav-item {
     border-radius: none;
     border: none;
-    margin: 1rem .25rem 1rem .25rem;
     text-align: center;
     align-content: center;
-    box-shadow: none; }
+    box-shadow: none;
+    font-size: 0.8rem; }
   .nav-link {
-    font-size: 1rem; }
+    font-size: 0.8rem; }
   .carousel-indicators {
     z-index: 1;
     display: none; }
   .contenedor-index {
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    padding: 0rem 1rem;
     justify-content: space-between;
     align-items: center; }
   .carousel {
@@ -344,12 +364,14 @@ fieldset {
     height: 100% !important;
     float: none !important;
     width: 70% !important;
-    margin-right: 0px !important; }
+    margin-right: 0px !important;
+    margin-bottom: 0rem !important;
+    padding-bottom: 0 !important; }
   .intro {
     align-items: center;
     max-width: 50%; }
-  .intro p {
-    font-size: 1.5rem; }
+    .intro p {
+      font-size: 1rem; }
   .detalle-horarios {
     font-size: 1.3rem;
     text-shadow: 1px 1px 1px #151574; }
@@ -467,6 +489,8 @@ fieldset {
     text-decoration-line: underline;
     padding-left: 20px;
     padding-top: 30px; }
+  main div div div div p {
+    font-size: 0.7rem; }
   div p {
     padding: 1rem; }
   .tipos {
@@ -628,13 +652,18 @@ legend {
   .video div video {
     width: 100%; }
   /*PAGINA DE PRODUCTOS*/
-  div .comprar-productos {
+  main div div div div p {
+    font-size: 0.9rem; }
+  main div h3 {
+    font-size: 1rem; }
+  main div .comprar-productos {
     display: block;
-    text-align: center; }
-  div a {
-    text-decoration: none; }
-    div a span {
-      color: black; }
+    text-align: center;
+    font-size: 1rem; }
+    main div .comprar-productos a {
+      text-decoration: none; }
+      main div .comprar-productos a span {
+        color: black; }
   /*PAGINA DE TRABAJOS*/
   div .tipo-cortes {
     display: flex;
@@ -643,12 +672,16 @@ legend {
     div .tipo-cortes .col .imagen-cortes {
       width: 40%; }
   /*PAGINA DE CONTACTO*/
-  .contactoInicio .donde-estamos-total {
+  .contactoInicio .mensaje-final p {
+    font-size: 1rem; }
+  .donde-estamos-total {
     align-items: stretch;
     padding-left: .5rem;
     padding-right: .5rem;
     align-items: center; }
-    .contactoInicio .donde-estamos-total div .mapa {
+    .donde-estamos-total .donde-estamos p {
+      font-size: 1rem; }
+    .donde-estamos-total div .mapa {
       display: block; }
   .como-llegar-conten {
     display: block; }
